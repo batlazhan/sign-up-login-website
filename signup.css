@@ -1,0 +1,110 @@
+:root{
+    --accent-color: #c67d63e0;
+    --base-color: #e9c6afe6;
+    --text-color: #5c1901;
+    --input-color: #f2ded0e6;
+    --button-color: #ca907be0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: lexend deca;
+    font-size: 17px;
+    background-image: url(images/pexels-karolina-grabowska-4814083.jpg);
+    background-size: cover;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+h1{
+    color: var(--text-color);
+    margin-bottom: 2px;
+}
+
+.signup-login-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #e9c6afc4;
+    min-width: 270px;
+    width: 22%;
+    padding: 21px;
+    border-radius: 21px;
+    backdrop-filter: blur(4px);
+}
+
+.signup-login-folder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--text-color);
+    width: 40px;
+    height: 40px;
+}
+
+input{
+    border-radius: 5px;
+    height: 26px;
+    padding: 0 5px 0 5px;
+    border: 2px solid var(--input-color);
+    background-color: var(--input-color);
+    transition: 150ms ease;
+    margin-right: 3px;
+    /* box-sizing: border-box; */
+}
+
+input:hover{
+    border: 2px solid var(--accent-color);
+}
+
+input:focus{
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+input:-webkit-autofill{
+    background-color: var(--input-color);
+    color: var(--input-color);
+}
+
+button{
+    border: none;
+    border-radius: 11px;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 3px 14px;
+    cursor: pointer;
+    transition: 150ms ease;
+
+}
+
+button:hover{
+    background-color: var(--accent-color);
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+a:hover{
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+.incorrect{
+    border-color: var(--text-color);
+    border-width: 2.5px;
+    background-color: #cb947f;
+    
+}
